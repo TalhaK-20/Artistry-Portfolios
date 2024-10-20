@@ -1,0 +1,67 @@
+[
+    {
+        "title": "C++",
+        "description": "Python has been a cornerstone in my development toolkit. Its clean and readable syntax, combined with a vast array of libraries and frameworks, has empowered me to tackle diverse projects, from web development to data analysis. Python's versatility and ease of integration have made it my go-to language for crafting robust applications and solving complex problems",
+        "image": "icon-cpp.png"
+    },
+    {
+        "title": "Python",
+        "description": "Python has been a cornerstone in my development toolkit. Its clean and readable syntax, combined with a vast array of libraries and frameworks, has empowered me to tackle diverse projects, from web development to data analysis. Python's versatility and ease of integration have made it my go-to language for crafting robust applications and solving complex problems",
+        "image": "icon-python.png"
+    },
+    {
+        "title": "JavaScript",
+        "description": "I bring websites to life with JavaScript, adding interactive features and optimizing performance with clean and efficient code.",
+        "image": "icon-js.svg"
+    },
+    {
+        "title": "Node JS",
+        "description": "I've harnessed the power of Node.js to develop server-side applications that are both efficient and scalable. Its non-blocking I/O model has allowed me to handle numerous simultaneous connections seamlessly. Whether it's building real-time chat applications or developing APIs, Node.js has been instrumental in ensuring smooth and performant server operations.",
+        "image": "icon-node-js.svg"
+    },
+    {
+        "title": "Express JS",
+        "description": "In my projects, I've leveraged Express.js to simplify the creation of web servers and RESTful APIs. Its minimalist and flexible nature has made routing and middleware management straightforward, allowing me to focus on delivering robust server-side solutions. Express.js has proven to be a powerful tool for building dynamic and scalable web applications.",
+        "image": "icon-express-js.svg"
+    },
+    {
+        "title": "React JS",
+        "description": "Using React, I craft scalable user interfaces with components, state management, and virtual DOM manipulation for seamless web applications.",
+        "image": "icon-react.svg"
+    },
+    {
+        "title": "Flask",
+        "description": "For Python-based web applications, I've used Flask to build lightweight and efficient web services. Its simplicity and modularity have enabled me to create APIs and web applications with ease. Flask's flexible architecture allows me to start with a basic setup and expand functionality as needed, making it ideal for both small projects and complex systems.",
+        "image": "icon-flask.svg"
+    },
+    {
+        "title": "HTML",
+        "description": "Beyond markup, HTML is crucial for an inclusive web. I structure content carefully for universal accessibility.",
+        "image": "icon-html.svg"
+    },
+    {
+        "title": "CSS (Sass)",
+        "description": "I prioritize pixel perfection, paying close attention to details for visually polished and precisely aligned designs, ensuring a seamless user experience.",
+        "image": "icon-css.svg"
+    },
+    {
+        "title": "Tailwind CSS",
+        "description": "Tailwind CSS: A utility-first CSS framework that streamlines the process of building modern, responsive web interfaces by providing a set of pre-defined utility classes.",
+        "image": "icon-tailwind.svg"
+    },
+    {
+        "title": "SQL",
+        "description": "SQL: A standard language for managing and manipulating databases, enabling data retrieval, insertion, updating, and deletion.",
+        "image": "icon-sql.svg"
+    },
+    {
+        "title": "MongoDB",
+        "description": "MongoDB: A NoSQL database management system known for its flexibility, scalability, and document-oriented structure.",
+        "image": "icon-mongodb.svg"
+    },
+    {
+        "title": "REST APIs",
+        "description": "I integrate data and functionality seamlessly with REST APIs, creating dynamic web applications for enhanced performance.",
+        "image": "icon-api.svg"
+    }
+]

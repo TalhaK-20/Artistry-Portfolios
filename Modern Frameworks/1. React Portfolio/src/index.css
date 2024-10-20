@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --main-color: #28e98c;
+    --second-color: #999999;
+    --circSize: 60dvw;
+    --cardSize: calc(var(--circSize) / 5.2);
+    --color-white: 0, 0%, 100%;
+}
+
+/* For Firefox */
+::-moz-selection {
+    color: var(--main-color);
+    background: #1f1f1f;
+}
+
+/* For other browsers */
+::selection {
+    background: var(--main-color);
+    color: #1f1f1f;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+}
+
+/* 
+  ### some styles that i can't do it with tialwindCss ###
+*/
+
+.blobs {
+    position: absolute;
+    height: 40rem;
+    width: 20%;
+    background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, .5));
+    filter: blur(6rem);
+    border-radius: 50%;
+}
+
+.right-blobs-project-component{
+    bottom: -186px !important;
+}
+.left-blobs-project-component{
+    top: 600px;
+    left: -12rem;
+}
+
+/* 
+    ### introduc section style ###
+*/
+
+.helloWorld::before {
+    content: "";
+    height: 1px;
+    width: 38px;
+    position: absolute;
+    background-color: var(--second-color);
+    top: 12px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0) rotate(360deg);
+    }
+}
+
+.circle-animation {
+    animation: rotate 9s infinite linear;
+    /* Adjust animation duration and easing as needed */
+}
+
+/* 
+    ### project section style ###
+*/
+
+.project-cart1 {
+    background: hsla(145, 84%, 73%, 1);
+
+    background: linear-gradient(90deg, hsla(145, 84%, 73%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(145, 84%, 73%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(145, 84%, 73%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#82F4B1", endColorstr="#30C67C", GradientType=1);
+
+}
+
+.project-cart2 {
+    background: hsla(167, 68%, 73%, 1);
+
+    background: linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#8DE9D5", endColorstr="#32C4C0", GradientType=1);
+}
+
+.project-cart3 {
+    background: rgb(18,179,235);
+    background: linear-gradient(90deg, rgba(18,179,235,1) 0%, rgba(17,211,243,1) 100%);
+}
+
+.cta {
+    position: relative;
+    padding: 12px 20px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    @apply md:py-[14px] lg:py-[15px] xl:py-[17px] lg:px-6 xl:px-[27px]
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #404042;
+    width: 100%;
+    height: 45px;
+    transition: all 0.3s ease;
+    @apply md:h-[50px] lg:h-[55px] xl:h-[60px]
+}
+
+.cta span {
+    position: relative;
+    line-height: normal;
+}
+
+.cta:hover:before {
+    width: 45px;
+    background: #404042;
+    @apply md:w-[50px] lg:w-[55px] xl:w-[60px]
+}
+
+/* 
+    ### about section style ###
+*/
+
+.about-blobs {
+    position: absolute;
+    height: 16rem;
+    width: 29%;
+    background: rgb(0 41 224 / 73%);
+    /* background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, .5)); */
+    filter: blur(3rem);
+    border-radius: 50%;
+    bottom: 0rem;
+    /* left: 21rem; */
+}
+
+.card {
+    background-image: url("assets/spiral.svg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.code-snippet::after,
+.card::after {
+    content: '';
+    width: 105%;
+    height: 520px;
+    -webkit-backdrop-filter: blur(.4rem);
+    backdrop-filter: blur(.4rem);
+    background-color: #1f1f1f;
+    opacity: 0.1;
+    position: absolute;
+    left: -12px;
+    border-radius: 24px;
+    bottom: -11px;
+}
+
+
+/* 
+    ### skills section style ###
+*/
+
+.circularCarousel {
+    width: var(--circSize);
+    height: var(--circSize);
+}
+
+.circularCarousel svg {
+    user-select: none;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.box {
+    width: var(--cardSize);
+    height: var(--cardSize);
+    background: conic-gradient(#f0f0f0, hsla(var(--color-white), 1));
+    touch-action: none;
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform-origin: 50% 50%;
+    transform: translate(336px, -909.681px);
+    transition: all ease-in-out .3s;
+}
+
+.box img {
+    max-width: calc(var(--cardSize) - (var(--cardSize) / 2));
+}
+
+.collisionDiv {
+    --width: 0.2rem;
+    position: absolute;
+    z-index: 100;
+    top: calc(var(--cardSize) - var(--cardSize) / 2);
+    left: calc(50% - var(--width) / 2);
+    width: var(--width);
+    height: var(--width);
+}
+
+.sphereWrapper {
+    --size: 16dvw;
+    position: absolute;
+    bottom: calc(-1 * var(--size) / 2);
+}
+
+.sphereWrapper .sphere {
+    transition: all .3s ease-in-out;
+    /* transform-origin: 50% 50%; */
+
+    width: var(--size);
+    height: var(--size);
+    border-radius: 100%;
+    background: linear-gradient(113deg, #DECAFF 11.44%, #691EE2 60.27%);
+    box-shadow: -35.036px -50.051px 80.1px 0px rgba(172, 60, 225, 0.76) inset, 0px 20.02px 40px 0px rgba(194, 255, 255, 0.25) inset, 0px 0px 24px 0px rgba(255, 255, 255, 0.26) inset;
+
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.sphereWrapper .sphere::before,
+.sphereWrapper .sphere::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.sphereWrapper .sphere::after {
+    width: 66%;
+    height: 100%;
+    filter: blur(8rem);
+    background: linear-gradient(180deg, rgba(24, 75, 255, 0.00) 0%, #174AFF 100%);
+}
+
+.sphereWrapper .sphere::before {
+    width: 120%;
+    height: 120%;
+    border-radius: 100%;
+    filter: blur(8rem);
+    background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #9829ff 100%);
+    transform: translate(-50%, -80%);
+}
+
+.sphereWrapper .sphere .isActive {
+    transform: scale(0.8);
+}
